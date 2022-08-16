@@ -107,3 +107,60 @@ modalWr.addEventListener("click", function(event){
 	modalWr.classList.remove("modal__wr-active");
 	modalContent.classList.remove("modal__body-open");
 })
+
+
+
+
+
+function time2(){
+
+	//РґР°С‚Р° РґРѕ СЏРєРѕС— Р±СѓРґРµ РІС–РґР»С–Рє
+		let myDate = new Date(2022,10,1,0,0,0,0).getTime();
+	
+	//РїРѕС‚РѕС‡РЅР° РґР°С‚Р°
+		let currentDate = new Date().getTime();
+	
+	
+	//РІС–РґРЅС–РјР°С”РјРѕ
+		let distance = +myDate - +currentDate;
+	
+	
+	//	РІРёС‚СЏРіСѓС”РјРѕ РІ Р·РјС–РЅРЅС– РґР°РЅС–
+	
+
+		let days = Math.floor(distance /(1000 * 60 * 60 * 24));
+		let hours = Math.floor(distance% (1000 * 60 * 60 * 24)/(1000 * 60 * 60));
+		let min = Math.floor(distance% (1000 * 60 * 60)/(1000 * 60 ));
+	
+
+	
+	if(days<10){
+		days = "0"+days;
+	}
+	if(hours<10){
+		hours = "0"+hours;
+	}
+	
+	if(min<10){
+		min = "0"+min;
+	}
+	
+	
+	document.querySelector(".time__days").innerText = days;
+	document.querySelector(".time__hours").innerText = hours;
+	document.querySelector(".time__minuts").innerText = min;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+	setInterval(time2, 1);
