@@ -250,22 +250,22 @@ header {
 .time__days-wr:after {
   content: "Дней";
   display: block;
-  top: 110%;
-  left: 11%;
+  top: 115%;
+  left: 10%;
 }
 
 .time__hourse-wr:after {
   content: "Часов";
   display: block;
-  top: 110%;
-  left: 11%;
+  top: 115%;
+  left: 10%;
 }
 
 .time__minuts-wr:after {
   content: "Минут";
   display: block;
-  top: 110%;
-  left: 11%;
+  top: 115%;
+  left: 10%;
 }
 
 .initial__bottom {
