@@ -187,7 +187,7 @@ header {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -15%;
+  top: -20%;
   left: -12%;
   background-color: #fff;
   border-radius: 13px;
@@ -202,7 +202,7 @@ header {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -15%;
+  top: -20%;
   left: 40%;
   background-color: #fff;
   border-radius: 13px;
@@ -674,12 +674,15 @@ footer {
   width: calc(60px + 30 * ((100vw - 320px) / 1120));
   height: calc(60px + 30 * ((100vw - 320px) / 1120));
   border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .rules__card-num span {
   font-size: calc(40px + 20 * ((100vw - 320px) / 1120));
   font-family: "Bebas Neue";
   font-weight: 900;
+  display: inline-block;
 }
 
 .rules__card-title {
@@ -742,6 +745,18 @@ footer {
   .leaf-2 {
     top: 36%;
     right: -4%;
+  }
+
+  .time__days:after,
+  .time__hours:after,
+  .time__minuts:after {
+    top: -9%;
+  }
+
+  .time__days:before,
+  .time__hours:before,
+  .time__minuts:before {
+    top: -9%;
   }
 
   .initial__net {
