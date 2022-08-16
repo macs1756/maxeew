@@ -268,6 +268,27 @@ header {
   left: 11%;
 }
 
+.initial__bottom {
+  background: #E25E5E;
+  border-radius: 13px;
+  padding-top: calc(30px + 50 * ((100vw - 320px) / 1120));
+  padding-bottom: calc(30px + 20 * ((100vw - 320px) / 1120));
+  padding-left: calc(15px + 105 * ((100vw - 320px) / 1120));
+  padding-right: calc(15px + 105 * ((100vw - 320px) / 1120));
+  color: rgba(255, 255, 255, 0.653);
+  text-align: center;
+  font-size: calc(14px + 10 * ((100vw - 320px) / 1120));
+}
+
+.initial__bottom span {
+  font-weight: 700;
+  color: #fff;
+}
+
+.initial__bottom-p:last-child {
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -516,12 +537,13 @@ a {
   color: #fff;
   padding-top: calc(15px + 8 * ((100vw - 320px) / 1120));
   padding-bottom: calc(15px + 8 * ((100vw - 320px) / 1120));
-  padding-left: calc(35px + 5 * ((100vw - 320px) / 1120));
-  padding-right: calc(35px + 5 * ((100vw - 320px) / 1120));
+  padding-left: 35px;
+  padding-right: 35px;
   font-family: "Nunito";
   -webkit-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
+  white-space: nowrap;
 }
 
 .btn-transparent {
@@ -535,6 +557,24 @@ a {
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: calc(25px + 39 * ((100vw - 320px) / 1120));
+  color: #fff;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  line-height: 105px;
+}
+
+.red {
+  color: #E25E5E;
+}
+
+.cen {
+  text-align: center;
 }
 
 .header__burger {
@@ -567,6 +607,10 @@ a {
 
 .burger__open-btn-item {
   display: none;
+}
+
+footer {
+  height: 500px;
 }
 
 @font-face {
@@ -609,17 +653,113 @@ a {
   font-style: normal;
 }
 
-@media (min-width: 767px) {
-  .initial__p {
-    text-align: left;
+.rules {
+  margin-top: calc(30px + 50 * ((100vw - 320px) / 1120));
+  overflow: hidden;
+}
+
+.rules__card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 24px 17px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 24px 17px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  letter-spacing: -0.03em;
+  position: relative;
+  height: 100%;
+}
+
+.rules__card-num {
+  border: 5px solid #E25E5E;
+  width: calc(60px + 30 * ((100vw - 320px) / 1120));
+  height: calc(60px + 30 * ((100vw - 320px) / 1120));
+  border-radius: 50%;
+}
+
+.rules__card-num span {
+  font-size: calc(40px + 20 * ((100vw - 320px) / 1120));
+  font-family: "Bebas Neue";
+  font-weight: 900;
+}
+
+.rules__card-title {
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1120));
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rules__card-dekor-1,
+.rules__card-dekor-3 {
+  position: absolute;
+  left: 0;
+  top: -7%;
+}
+
+.rules__card-dekor-2 {
+  position: absolute;
+  right: 0;
+  top: -7%;
+}
+
+.rules__btn-next {
+  max-width: 260px;
+  width: 100%;
+}
+
+.rules__btn-more {
+  max-width: 260px;
+  width: 100%;
+}
+
+@media (min-width: 578px) {
+  .initial__bottom-p:last-child {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
+  .initial__p {
+    text-align: left;
+  }
+
   .initial__btn {
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
+  }
+
+  .tomato-2 {
+    bottom: -2%;
+    left: 1%;
+  }
+
+  .leaf-1 {
+    top: 15%;
+    left: 12%;
+  }
+
+  .leaf-2 {
+    top: 36%;
+    right: -4%;
+  }
+
+  .initial__net {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .rules__card-dekor-1,
+  .rules__card-dekor-3 {
+    display: none;
+  }
+
+  .rules__card-dekor-2 {
+    right: -120%;
+    top: -50%;
+    -webkit-transform: rotate(-50deg);
+        -ms-transform: rotate(-50deg);
+            transform: rotate(-50deg);
   }
 }
 
