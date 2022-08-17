@@ -704,7 +704,6 @@ h2 {
   font-size: calc(40px + 20 * ((100vw - 320px) / 1120));
   font-family: "Bebas Neue";
   font-weight: 900;
-  display: inline-block;
   line-height: 100%;
   position: absolute;
   top: 50%;
