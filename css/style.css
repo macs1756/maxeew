@@ -16,9 +16,8 @@ header {
 }
 
 .header {
-  padding-top: calc(15px + 20 * ((100vw - 320px) / 1120));
-  padding-bottom: calc(15px + 20 * ((100vw - 320px) / 1120));
-  border-bottom: 1px solid #000;
+  padding-top: calc(15px + 15 * ((100vw - 320px) / 1120));
+  padding-bottom: calc(15px + 15 * ((100vw - 320px) / 1120));
 }
 
 .header__logo {
@@ -42,7 +41,7 @@ header {
 }
 
 .initial__wr {
-  margin-top: calc(80px + 50 * ((100vw - 320px) / 1120));
+  margin-top: calc(80px + 30 * ((100vw - 320px) / 1120));
 }
 
 .initial__title {
@@ -692,6 +691,7 @@ h2 {
 }
 
 .rules__card-num {
+  margin-bottom: 15px;
   border: 5px solid #E25E5E;
   width: calc(60px + 30 * ((100vw - 320px) / 1120));
   height: calc(60px + 30 * ((100vw - 320px) / 1120));
@@ -789,6 +789,12 @@ h2 {
 
 .prize__card-3 {
   margin-bottom: 40px;
+}
+
+.prize__wr {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .product {
