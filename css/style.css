@@ -626,8 +626,13 @@ h2 {
   display: none;
 }
 
-footer {
-  height: 500px;
+.footer {
+  padding-top: calc(40px + 10 * ((100vw - 320px) / 1120));
+  padding-bottom: calc(30px + 20 * ((100vw - 320px) / 1120));
+}
+
+.footer__img {
+  width: calc(140px + 110 * ((100vw - 320px) / 1120));
 }
 
 @font-face {
@@ -693,6 +698,7 @@ footer {
   border-radius: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 100%;
 }
 
 .rules__card-num span {
@@ -700,6 +706,7 @@ footer {
   font-family: "Bebas Neue";
   font-weight: 900;
   display: inline-block;
+  line-height: 100%;
 }
 
 .rules__card-title {
@@ -797,6 +804,7 @@ footer {
           flex: 0 0 50px;
   border-radius: 50%;
   padding-right: 4px;
+  margin: 0 5px;
 }
 
 .arrow-next {
@@ -841,10 +849,79 @@ footer {
   min-width: 100%;
 }
 
+.swiper-pagination-bullet {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  display: none;
+}
+
+.subfooter {
+  padding-top: calc(40px + 40 * ((100vw - 320px) / 1120));
+  padding-bottom: calc(40px + 10 * ((100vw - 320px) / 1120));
+  color: #FFFFFF;
+}
+
+.subfooter__p {
+  font-family: "Nunito";
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+}
+
+.subfooter__card {
+  margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1120));
+}
+
+.subfooter__card-img {
+  border: 3px solid #E25E5E;
+  border-radius: 20px;
+}
+
+.subfooter__card-p {
+  padding: 0 5px;
+  font-size: calc(13px + 5 * ((100vw - 320px) / 1120));
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 105%;
+}
+
+.subfooter__btn {
+  color: #E25E5E;
+  background-color: #fff;
+  border-radius: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: calc(60px + 10 * ((100vw - 320px) / 1120));
+  padding-right: calc(60px + 10 * ((100vw - 320px) / 1120));
+  font-weight: 700;
+  font-family: "Nunito";
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  line-height: 145%;
+}
+
 @media (min-width: 578px) {
   .initial__bottom-p:last-child {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .swiper-pagination-bullet {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    border: 2px solid #E25E5E;
+    background-color: transparent;
+    width: calc(12px + 10 * ((100vw - 320px) / 1120));
+    height: calc(12px + 10 * ((100vw - 320px) / 1120));
+  }
+
+  .swiper-pagination-bullet-active {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    background-color: #E25E5E;
   }
 }
 

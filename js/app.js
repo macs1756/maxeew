@@ -188,5 +188,10 @@ function time2(){
 				992: {
 					slidesPerView: 4,
 				},
+				
+			},
+			pagination: {
+				el: ".bullets",
+				clickable: true,
 			},
 	});
