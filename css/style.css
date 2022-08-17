@@ -692,13 +692,12 @@ h2 {
 
 .rules__card-num {
   margin-bottom: 15px;
-  border: 5px solid #E25E5E;
+  border: 6px solid #E25E5E;
   width: calc(60px + 30 * ((100vw - 320px) / 1120));
   height: calc(60px + 30 * ((100vw - 320px) / 1120));
   border-radius: 50%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   line-height: 100%;
+  position: relative;
 }
 
 .rules__card-num span {
@@ -707,6 +706,12 @@ h2 {
   font-weight: 900;
   display: inline-block;
   line-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .rules__card-title {
@@ -903,6 +908,9 @@ h2 {
   font-family: "Nunito";
   font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
   line-height: 145%;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (min-width: 578px) {
@@ -984,11 +992,12 @@ h2 {
   }
 
   .rules__card-dekor-2 {
-    right: -120%;
-    top: -50%;
+    right: -115%;
+    top: -20%;
     -webkit-transform: rotate(-50deg);
         -ms-transform: rotate(-50deg);
             transform: rotate(-50deg);
+    z-index: 5;
   }
 
   .prize__dekor {
@@ -1160,6 +1169,17 @@ h2 {
     -webkit-transform: scale(1.02);
         -ms-transform: scale(1.02);
             transform: scale(1.02);
+  }
+
+  .footer__btn:hover {
+    text-decoration: underline;
+  }
+
+  .subfooter__btn:hover {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background-color: rgb(216, 214, 214);
   }
 }
 
