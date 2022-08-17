@@ -164,3 +164,29 @@ function time2(){
 	}
 	
 	setInterval(time2, 1);
+
+
+
+	new Swiper(".product__slider-swiper", {
+			loop: true,
+			autoHeiht: true,
+			navigation : {
+				nextEl : ".arrow-next",
+				prevEl : ".arrow-prev",
+			},
+			slidesPerView: 2,
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				600: {
+					slidesPerView: 2,
+				},
+				767: {
+					slidesPerView: 3,	
+				},
+				992: {
+					slidesPerView: 4,
+				},
+			},
+	});

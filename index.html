@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bootstrap</title>
-	<link rel="stylesheet" href="css/bootstrap-grid.css?_v=20220816220241">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220816220241">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220817135755"/>
+	<link rel="stylesheet" href="css/bootstrap-grid.css?_v=20220817135755">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220817135755">	
 </head>
 <body>
 
@@ -127,7 +128,7 @@
 
 
 	<div class="rules">
-	<h2 class="red">правила конкурса</h2>
+	<h2 class="red mt-5">правила конкурса</h2>
 	<div class="container-xl">
 		<div class="row">
 
@@ -171,6 +172,117 @@
 		</div>
 	</div>
 </div>
+
+	<section class="bg-red prize">
+	<picture><source srcset="img/rules-1.webp" type="image/webp"><img src="img/rules-1.png" alt="" class="prize__dekor"></picture>
+			<h2>Призы конкурса</h2>
+			<div class="prize__p cen">По итогам конкурса авторы лучших рецептов получат ценные призы или наборы с продукцией “Махеевъ”!</div>
+
+
+
+
+
+
+
+		<div class="container-xl">
+			<div class="row">
+
+
+				<div class="col-12 col-md-4 order-md-2">
+					<div class="prize__card prize__card-1 d-flex flex-column align-items-center justify-content-center">
+						<picture><source srcset="img/prize-2.webp" type="image/webp"><img src="img/prize-2.png" class="prize__card-img-1"></picture>
+						<div class="rules__card-num mb-3 d-flex align-items-center justify-content-center"><span class="me-1 red">1</span></div>
+						<div class="prize__card-label cen red pp">Настольный блендер Röndell RDE-1250</div> 
+					</div>
+				</div>
+				
+			
+
+			<div class="col-12 col-md-4 order-md-1">
+				<div class="prize__card prize__card-2 d-flex flex-column align-items-center justify-content-center">
+					<picture><source srcset="img/prize-1.webp" type="image/webp"><img src="img/prize-1.png" class="prize__card-img-1 prize__card-img-2"></picture>
+					<div class="rules__card-num mb-3 d-flex align-items-center justify-content-center"><span class="me-1 red">2</span></div>
+					<div class="prize__card-label cen red pp">Чайник Röndell RDE-1001</div> 
+				</div>
+			</div>
+				
+			
+
+			<div class="col-12 col-md-4 order-md-3">
+				<div class="prize__card prize__card-3 d-flex flex-column align-items-center justify-content-center">
+					<picture><source srcset="img/prize-3.webp" type="image/webp"><img src="img/prize-3.png" class="prize__card-img-1 prize__card-img-3"></picture>
+					<div class="rules__card-num mb-3 d-flex align-items-center justify-content-center"><span class="me-1 red">3</span></div>
+					<div class="prize__card-label cen red pp">Миксер Röndell RDE-1350</div>
+				</div>
+			</div>
+			</div>
+			<div class="row d-md-flex flex-row justify-content-md-center align-items-md-center">
+				<div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end">
+					<picture><source srcset="img/prize__box.webp" type="image/webp"><img src="img/prize__box.png" alt="prize box" class="prize__box"></picture>
+				</div>
+				<div class="col-12 col-md-7 pp mb-4 cen-l">
+					<div class="prize__box-text ">+ 5 призовых наборов  с продукцией «Махеевъ»!</div>
+				</div>
+			</div>
+			<p class="prize__box-p cen">Конкурс проводится с 15 июля по 15 августа 2022 г.</p>
+		</div>
+		
+	
+
+
+
+
+
+</section>
+
+	<section class="product">
+	<h2 class="product__title red mb-2">наша продукция</h2>
+	<div class="container-xl">
+
+	
+	<div class="product__slider d-flex flex-row align-items-center">
+
+
+
+		<div class="arrow-prev product__slider-arrow bg-red d-flex align-items-center justify-content-center">
+			<img src="img/arrow__slider.svg" alt="">
+		</div>
+
+
+
+
+		<div class="product__slider-swiper  swiper-container ">
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide">
+					<picture><source srcset="img/s-slide-1.webp" type="image/webp"><img src="img/s-slide-1.jpg" alt="slide"></picture>
+					
+				</div>
+
+				<div class="swiper-slide">
+					<picture><source srcset="img/s-slide-2.webp" type="image/webp"><img src="img/s-slide-2.jpg" alt="slide"></picture>				
+				</div>
+				<div class="swiper-slide">
+					<picture><source srcset="img/s-slide-3.webp" type="image/webp"><img src="img/s-slide-3.jpg" alt="slide"></picture>				
+				</div>
+
+				<div class="swiper-slide">
+					<picture><source srcset="img/s-slide-4.webp" type="image/webp"><img src="img/s-slide-4.jpg" alt="slide"></picture>
+					
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+		<div class="arrow-next product__slider-arrow bg-red d-flex align-items-center justify-content-center">
+			<img src="img/arrow__slider.svg" alt="">
+		</div>
+	</div>
+</div>
+</section>
 	
 </main>
 
@@ -187,7 +299,8 @@
 	</div>	
 </div>
 
-<script src="js/app.js?_v=20220816220241"></script>
-<script src="js/dynamicAdapt.js?_v=20220816220241"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220817135755"></script>
+<script src="js/dynamicAdapt.js?_v=20220817135755"></script>
+<script src="js/app.js?_v=20220817135755"></script>
 </body>
 </html>

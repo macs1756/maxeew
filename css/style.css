@@ -566,7 +566,7 @@ h2 {
   color: #fff;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  line-height: 105px;
+  line-height: 105%;
 }
 
 .red {
@@ -574,6 +574,23 @@ h2 {
 }
 
 .cen {
+  text-align: center;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bg-red {
+  background: #E25E5E;
+}
+
+.pp {
+  font-weight: 700;
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1120));
+}
+
+.cen-l {
   text-align: center;
 }
 
@@ -714,6 +731,116 @@ footer {
   width: 100%;
 }
 
+.prize {
+  padding-top: calc(40px + 40 * ((100vw - 320px) / 1120));
+  padding-bottom: calc(30px + 20 * ((100vw - 320px) / 1120));
+  color: #fff;
+  position: relative;
+}
+
+.prize__dekor {
+  position: absolute;
+  left: 2%;
+  top: -2.5%;
+  -webkit-transform: rotate(50deg);
+      -ms-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+.prize__p {
+  margin: 0 auto;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  font-weight: 500;
+  line-height: 105%;
+  margin-bottom: calc(115px + 45 * ((100vw - 320px) / 1120));
+  padding: 0 15px;
+  max-width: 700px;
+}
+
+.prize__card {
+  -webkit-box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  background-color: #fff;
+  max-width: 100%;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.prize__card {
+  margin-bottom: 110px;
+}
+
+.prize__card-img-1 {
+  margin-top: -80px;
+  margin-bottom: 25px;
+}
+
+.prize__card-img-3 {
+  margin-right: 20px;
+}
+
+.prize__card-3 {
+  margin-bottom: 40px;
+}
+
+.product {
+  padding-top: calc(40px + 40 * ((100vw - 320px) / 1120));
+  padding-bottom: 50px;
+}
+
+.product__slider-arrow {
+  width: 50px;
+  height: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+  border-radius: 50%;
+  padding-right: 4px;
+}
+
+.arrow-next {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.product__slider-swiper {
+  min-width: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  max-width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-slide {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-slide img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
 @media (min-width: 578px) {
   .initial__bottom-p:last-child {
     width: 70%;
@@ -764,6 +891,10 @@ footer {
         flex-wrap: wrap;
   }
 
+  .cen-l {
+    text-align: left;
+  }
+
   .rules__card-dekor-1,
   .rules__card-dekor-3 {
     display: none;
@@ -775,6 +906,19 @@ footer {
     -webkit-transform: rotate(-50deg);
         -ms-transform: rotate(-50deg);
             transform: rotate(-50deg);
+  }
+
+  .prize__dekor {
+    left: 3%;
+    top: -5%;
+  }
+
+  .prize__card {
+    margin-bottom: 40px;
+  }
+
+  .prize__box-text {
+    max-width: 300px;
   }
 }
 
