@@ -711,8 +711,8 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin-top: 3px;
-  margin-right: 3px;
+  margin-top: 5px;
+  margin-right: 7px;
 }
 
 .rules__card-title {
